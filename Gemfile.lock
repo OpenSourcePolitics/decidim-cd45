@@ -7,13 +7,11 @@ GIT
       decidim-core (= 0.22.0)
 
 GIT
-  remote: https://github.com/OpenSourcePolitics/decidim-module-term_customizer.git
-  revision: b083f1f2e398aa51606ea9adc928394b99b44be1
-  branch: 0.dev
+  remote: https://github.com/OpenSourcePolitics/voting_budgets_rule
+  revision: 83d60411bfc79b98aa7ebd36e0b17140d581f97e
   specs:
-    decidim-term_customizer (0.dev)
-      decidim-admin
-      decidim-core
+    decidim-voting_budgets_rule (0.22.0)
+      decidim-core (= 0.22.0)
 
 GIT
   remote: https://github.com/decidim/decidim.git
@@ -213,6 +211,15 @@ GIT
       sassc-rails (~> 2.1.2)
     decidim-verifications (0.22.0)
       decidim-core (= 0.22.0)
+
+GIT
+  remote: https://github.com/mainio/decidim-module-term_customizer
+  revision: 677cc207224c900ff65a5f48ed70bc80853fc963
+  branch: 0.22-stable
+  specs:
+    decidim-term_customizer (0.22.0)
+      decidim-admin (~> 0.22.0)
+      decidim-core (~> 0.22.0)
 
 GEM
   remote: https://rubygems.org/
@@ -841,6 +848,7 @@ DEPENDENCIES
   decidim-dev!
   decidim-navbar_links!
   decidim-term_customizer!
+  decidim-voting_budgets_rule!
   dotenv-rails
   faker (~> 1.8)
   fog-aws
@@ -865,4 +873,4 @@ RUBY VERSION
    ruby 2.6.3p62
 
 BUNDLED WITH
-   2.1.4
+   2.2.11
